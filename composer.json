@@ -1,0 +1,17 @@
+{
+    "name": "liujinyong\/simple-tools",
+    "description": "simple-tools of php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "liujinyong",
+            "email": "893296814@qq.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Liujinyong\\SimpleTools\\": "src"
+        }
+    }
+}
