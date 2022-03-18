@@ -6,12 +6,34 @@
 ## Installing
 
 ```shell
-$ composer require liujinyong/simple-tools -vvv
+$ composer require liujinyong/simple-tools 
 ```
 
-## Usage
+## 使用
 
-TODO
+```php
+<?php
+    require __DIR__.'/vendor/autoload.php';
+    
+    $data = \Liujinyong\SimpleTools\Tools::httpClient("get","www.baidu.com");
+    echo $data;
+    
+    $data = array(
+        array( 'clicks' => 1, 'clickDate' =>'2015-10-11' ),
+        array( 'clicks' => 2, 'clickDate' =>'2015-10-11' ),
+        array( 'clicks' => 3, 'clickDate' =>'2015-10-09' ),
+        array( 'clicks' => 4, 'clickDate' =>'2015-10-08' ),
+    );
+    $data = \Liujinyong\SimpleTools\Tools::page($data,3,2);
+    print_r( $data);
+
+
+     $data = \Liujinyong\SimpleTools\Tools::getAge("1999-02-01");
+     echo $data;
+
+```
+
+
 
 ## Contributing
 
